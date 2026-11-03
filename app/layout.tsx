@@ -32,6 +32,11 @@ export const metadata: Metadata = {
   title: 'PrimeCut Barbers | Expert Barbers in Lompoc, CA',
   description:
     'Premium barbering services in Lompoc, CA, including classic haircuts, modern fades, beard trims, and hot towel shaves.',
+  applicationName: 'PrimeCut Barbers',
+  appleWebApp: {
+    capable: true,
+    title: 'PrimeCut Barbers',
+  },
   openGraph: {
     title: 'PrimeCut Barbers | Expert Barbers in Lompoc, CA',
     description:
@@ -57,6 +62,13 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+  themeColor: '#070b17',
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const localBusinessJson = {
     '@context': 'https://schema.org',
@@ -78,6 +90,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="en" suppressHydrationWarning className={`${inter.variable} ${oswald.variable}`}>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+      </head>
       <body className="bg-navy-950 text-cream antialiased">
         <script
           type="application/ld+json"

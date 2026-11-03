@@ -20,14 +20,14 @@ function MobileQuickActions() {
       <a
         href="tel:+11236346544"
         aria-label="Call now"
-        className="fixed bottom-4 left-4 z-40 inline-flex items-center justify-center rounded-full border border-gold-400/80 bg-gold-gradient px-5 py-3 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-navy-950 shadow-[0_14px_35px_rgba(212,164,55,0.25)] md:hidden"
+        className="fixed bottom-[calc(1rem+env(safe-area-inset-bottom))] left-4 z-40 inline-flex items-center justify-center rounded-full border border-gold-400/80 bg-gold-gradient px-5 py-3 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-navy-950 shadow-[0_14px_35px_rgba(212,164,55,0.25)] md:hidden"
       >
         Call Now
       </a>
       <a
         href="#contact"
         aria-label="Book an appointment"
-        className="fixed bottom-4 right-4 z-40 inline-flex items-center justify-center rounded-full border border-gold-400/80 bg-navy-900 px-5 py-3 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-gold-300 shadow-[0_14px_35px_rgba(15,23,42,0.34)] md:hidden"
+        className="fixed bottom-[calc(1rem+env(safe-area-inset-bottom))] right-4 z-40 inline-flex items-center justify-center rounded-full border border-gold-400/80 bg-navy-900 px-5 py-3 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-gold-300 shadow-[0_14px_35px_rgba(15,23,42,0.34)] md:hidden"
       >
         Book
       </a>
